@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5S5-fF-j0x">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--用户登录-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="XMPP_WechatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sasa@yinandemacbook-pro.local" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-GR-pRL">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asd123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-uw-9hR">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="localhost" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMK-DZ-2BG">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYi-65-5u9">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfd-eL-tKx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="registerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80g-tp-Ici"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gfd-eL-tKx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3CV-nF-BTT"/>
+                            <constraint firstItem="CIT-GR-pRL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="QNP-qc-ct6">
+                                <variation key="widthClass=compact" constant="61"/>
+                            </constraint>
+                            <constraint firstItem="Kli-uw-9hR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R8P-Vg-P4K"/>
+                            <constraint firstItem="kYi-65-5u9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="UAD-Ii-wYY"/>
+                            <constraint firstItem="vMK-DZ-2BG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UpW-YE-WAd"/>
+                            <constraint firstItem="Kli-uw-9hR" firstAttribute="top" secondItem="CIT-GR-pRL" secondAttribute="bottom" constant="30" id="dy8-a9-SfF"/>
+                            <constraint firstItem="vMK-DZ-2BG" firstAttribute="top" secondItem="Kli-uw-9hR" secondAttribute="bottom" constant="30" id="ksC-Oy-0Nx"/>
+                            <constraint firstItem="CIT-GR-pRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="myx-4X-BDa"/>
+                            <constraint firstItem="gfd-eL-tKx" firstAttribute="top" secondItem="vMK-DZ-2BG" secondAttribute="bottom" constant="50" id="sZD-TB-ugZ"/>
+                            <constraint firstItem="CIT-GR-pRL" firstAttribute="top" secondItem="kYi-65-5u9" secondAttribute="bottom" constant="15" id="wVr-ft-HKm"/>
+                            <constraint firstItem="kYi-65-5u9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqf-6k-Hec"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CIT-GR-pRL"/>
+                                <exclude reference="Kli-uw-9hR"/>
+                                <exclude reference="vMK-DZ-2BG"/>
+                                <exclude reference="kYi-65-5u9"/>
+                                <exclude reference="gfd-eL-tKx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QNP-qc-ct6"/>
+                                <exclude reference="myx-4X-BDa"/>
+                                <exclude reference="wVr-ft-HKm"/>
+                                <exclude reference="UAD-Ii-wYY"/>
+                                <exclude reference="xqf-6k-Hec"/>
+                                <exclude reference="R8P-Vg-P4K"/>
+                                <exclude reference="dy8-a9-SfF"/>
+                                <exclude reference="UpW-YE-WAd"/>
+                                <exclude reference="ksC-Oy-0Nx"/>
+                                <exclude reference="3CV-nF-BTT"/>
+                                <exclude reference="sZD-TB-ugZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CIT-GR-pRL"/>
+                                <include reference="Kli-uw-9hR"/>
+                                <include reference="vMK-DZ-2BG"/>
+                                <include reference="kYi-65-5u9"/>
+                                <include reference="gfd-eL-tKx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QNP-qc-ct6"/>
+                                <include reference="myx-4X-BDa"/>
+                                <include reference="wVr-ft-HKm"/>
+                                <include reference="UAD-Ii-wYY"/>
+                                <include reference="xqf-6k-Hec"/>
+                                <include reference="R8P-Vg-P4K"/>
+                                <include reference="dy8-a9-SfF"/>
+                                <include reference="UpW-YE-WAd"/>
+                                <include reference="ksC-Oy-0Nx"/>
+                                <include reference="3CV-nF-BTT"/>
+                                <include reference="sZD-TB-ugZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="用户登录" id="0Ir-zu-dWW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CvN-oU-CEr">
+                            <connections>
+                                <segue destination="U2P-pj-0xb" kind="unwind" unwindAction="unwindForSegue:" id="Hgb-JQ-Puw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Xcy-bF-hrx">
+                            <connections>
+                                <segue destination="U2P-pj-0xb" kind="unwind" unwindAction="unwindForSegue:" id="zwK-w6-N8e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="autoLoginSwitch" destination="kYi-65-5u9" id="HFX-a6-rDD"/>
+                        <outlet property="doneBtn" destination="Xcy-bF-hrx" id="dDt-Ux-EZr"/>
+                        <outlet property="hostTF" destination="vMK-DZ-2BG" id="WOy-gB-00K"/>
+                        <outlet property="passwordTF" destination="Kli-uw-9hR" id="ls1-QV-jAc"/>
+                        <outlet property="userTF" destination="CIT-GR-pRL" id="6zW-yQ-tWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="U2P-pj-0xb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4231.5" y="421"/>
+        </scene>
+        <!--聊天-->
+        <scene sceneID="3uQ-ob-xhR">
+            <objects>
+                <tableViewController id="Fhu-y9-YNe" customClass="ChatTableViewController" customModule="XMPP_WechatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oud-oU-WKD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textField key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="6RV-EO-cr0">
+                            <rect key="frame" x="0.0" y="136" width="600" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="composingAction:" destination="Fhu-y9-YNe" eventType="editingChanged" id="HcT-sZ-5J6"/>
+                            </connections>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" id="L2D-Pv-2Te">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L2D-Pv-2Te" id="ZZr-Xz-MLP">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fhu-y9-YNe" id="HhC-Qc-XmO"/>
+                            <outlet property="delegate" destination="Fhu-y9-YNe" id="dIx-3M-9EX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="聊天" id="0Vu-ye-b3F">
+                        <barButtonItem key="rightBarButtonItem" title="发送" id="VqI-kx-ME8">
+                            <connections>
+                                <action selector="sendAction:" destination="Fhu-y9-YNe" id="abP-su-vcc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="msgTF" destination="6RV-EO-cr0" id="W8Z-GX-yU0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVV-UK-JGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2547" y="1092"/>
+        </scene>
+        <!--好友列表-->
+        <scene sceneID="HIY-TE-nPk">
+            <objects>
+                <tableViewController id="EZ3-RK-gYJ" customClass="BuddyListTableViewController" customModule="XMPP_WechatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GrB-Ys-e9v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="buddyListCell" id="t73-oP-I5A">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t73-oP-I5A" id="QmH-MQ-TG4">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EZ3-RK-gYJ" id="QrS-iC-ZIH"/>
+                            <outlet property="delegate" destination="EZ3-RK-gYJ" id="6pL-VW-igN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="好友列表" id="2og-vr-CYJ">
+                        <barButtonItem key="leftBarButtonItem" id="IM4-WZ-crW">
+                            <connections>
+                                <action selector="leftBtnItemAction:" destination="EZ3-RK-gYJ" id="qvw-cN-L5w"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="登录" id="E5Z-pm-PVI">
+                                <connections>
+                                    <segue destination="CRA-Nh-Qin" kind="presentation" identifier="LoginSegue" id="rGb-Ej-NOE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="QO2-n7-bmG">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bX3-f5-A73">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="加好友"/>
+                                    <connections>
+                                        <action selector="addBuddyAction:" destination="EZ3-RK-gYJ" eventType="touchUpInside" id="eN9-Z6-v45"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myStatus" destination="IM4-WZ-crW" id="3DX-vr-uez"/>
+                        <segue destination="Fhu-y9-YNe" kind="show" identifier="toChatSegue" id="g80-Jq-FsM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fd7-t0-ODu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2319" y="421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z89-Rl-ZdE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5S5-fF-j0x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cag-oZ-Oax">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EZ3-RK-gYJ" kind="relationship" relationship="rootViewController" id="cW0-jC-vVD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EkT-ZC-bwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m33-24-KKN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CRA-Nh-Qin" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mEO-a5-VHx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ovJ-eZ-pfC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFo-O0-5zO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3433.5" y="421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6hk-Af-zsu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WFC-IR-gnP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dew-EW-g17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fhu-y9-YNe" kind="relationship" relationship="rootViewController" id="RbH-fJ-g3J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCS-uJ-YBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="1092"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g80-Jq-FsM"/>
+    </inferredMetricsTieBreakers>
+</document>
